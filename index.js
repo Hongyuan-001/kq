@@ -356,7 +356,7 @@ function askAll() {
 
 function LogData(){
     for(let j=0;j<dataJson.length;j++){
-        console.log('\n'+dataJson[j][0]);
+        console.log("");
         for(let i=0;i<dataJson[j][1].length;i++){
             let state='';
             let temp=dataJson[j][1][i][1];
@@ -383,16 +383,16 @@ function LogData(){
                 }
             }
             if(state==''){
-                state = colors('white','正常');
+                state = colors('blue','正常');//white
             }else{
                 state = colors('red',state);//"\x1B[31m"+state+"\x1B[0m";
             }     
-            console.log(`${starttime.format('YYYY/MM/DD')}    ${starttime.format('HH:mm:ss')}    ${strendtime}    ${state}`);
+            console.log(`${dataJson[j][0]}    ${starttime.format('YYYY/MM/DD')}    ${starttime.format('HH:mm:ss')}    ${strendtime}    ${state}`);
         }
     }
     //console.log(dataJson);
 }
-//根据日期排序,分组
+
 function GetArry(Arr){
     for (let j = 0; j < Arr.length-1; j++) {
         let done = true;
