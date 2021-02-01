@@ -342,11 +342,11 @@ function parseKQ(html) {
 }
 
 function askAll() {
-    inquire('2021-01-01', '2021-1-31', 'john', false,
-    ()=> inquire('2021-01-01', '2021-1-31', 'S2008001', false,
-    ()=> inquire('2021-01-01', '2021-1-31', 'ANNE', false,
-    ()=> inquire('2021-01-01', '2021-1-31', 'LEO MY CHEN', false,
-    ()=> inquire('2021-01-01', '2021-1-31', 'S0203002', false,
+    inquire('2021-01-01', '2021-2-31', 'john', false,
+    ()=> inquire('2021-01-01', '2021-2-28', 'S2008001', false,
+    ()=> inquire('2021-01-01', '2021-2-28', 'ANNE', false,
+    ()=> inquire('2021-01-01', '2021-2-28', 'LEO MY CHEN', false,
+    ()=> inquire('2021-01-01', '2021-2-28', 'S0203002', false,
     function() { //console.log("All done.") 
         dataJson.push([dataArr[0][0]+' '+dataArr[0][1]+' '+dataArr[0][2],GetArry(dataArr)]);    
         LogData();
