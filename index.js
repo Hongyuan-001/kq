@@ -7,8 +7,8 @@
 const http = require('http');   // NOTE: import default module
 const fs = require('fs');       // NOTE: import default module
 const querystring = require('querystring'); // NOTE: import default module
-const moment = require('moment');
-const colors = require('colors-console');
+const moment = require('./moment.js');
+const colors = require('./colors-console.js');
 //
 // Step 1: Open login page to get cookie 'ASP.NET_SessionId' and hidden input '_ASPNetRecycleSession'.
 //
